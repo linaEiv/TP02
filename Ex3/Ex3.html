@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draw a live camera</title>
+    <link rel="stylesheet" href="./Ex3.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <center>
+                <video autoplay hidden></video>
+                <canvas width="600" height="480" id="canvasInput"></canvas>
+                <div class="control">
+                    <span>Canvas <i class="bi bi-camera-reels"></i> : Please show your face to me</span>
+                    <div>
+                        <button id="start">Start</button>
+                        <button id="stop" hidden>Stop</button>
+                    </div>
+                </div>
+            </center>
+        </div>
+        <div class="output">
+            <span>Mini project with canvas and opencv.js</span>
+            <canvas width="600" height="480" id="canvasOutput"></canvas>
+        </div>
+    </div>
+
+    <script src="./Ex3.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: rgb(194, 247, 229);
+}
+.container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    align-items: center;
+    height: 100vh;
+    
+}
+.container .input-file{
+    background-color: rgb(102, 96, 96);
+    width: 400px;
+    height: 100px;
+    margin-top: -4px;
+    padding: 20px 0px;
+    color: aliceblue;
+
+}
+.container p{
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+
+}
+.container .input-file .myImage{
+    font-size: 1rem;
+    color: rgb(228, 241, 238);
+    text-align: center;
+}

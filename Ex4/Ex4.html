@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="book.png">
+    <title>CRUD of Book</title>
+    <link rel="stylesheet" href="./Ex4.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="container">
+        <form autocomplete="off" onsubmit="onFormSubmit()">
+            <div class="add">
+                <div class="header-add">Add new book here!</div>
+
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name_book" placeholder="Enter here" onclick="if(this.placeholder == 'Enter here') {this.placeholder = ''}" onBlur="if(this.placeholder == '') {this.placeholder = 'Enter here'}" />
+                <label for="category">Category</label>
+                <input type="text" name="category" id="category_book" placeholder="Enter here" onclick="if(this.placeholder == 'Enter here') {this.placeholder = ''}" onBlur="if(this.placeholder == '') {this.placeholder = 'Enter here'}" />
+                <label for="price">Price</label>
+                <input type="text" name="price" id="price_book" placeholder="Enter here" onclick="if(this.placeholder == 'Enter here') {this.placeholder = ''}" onBlur="if(this.placeholder == '') {this.placeholder = 'Enter here'}" />
+
+
+                <button type="submit" class="add_book">Add</button>
+                <button type="submit" class="edit_book">update</button>
+
+            </div>
+        </form>
+        <div class="home" id="add_items">
+            <div class="book-info">Book</div>
+        </div>
+
+        <script src="./Ex4.js"></script>
+
+
+    </div>
+    </div>
+</body>
+
+</html>
